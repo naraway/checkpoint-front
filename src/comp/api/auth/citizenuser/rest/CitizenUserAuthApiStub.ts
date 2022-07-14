@@ -1,6 +1,7 @@
 import { ApiClient, autobind } from '@nara-way/prologue';
 import { CitizenLoginResponse } from '../api-model';
 import { getGeolocationData } from '../../../feature/shared/util/GeolocationUtil';
+import { auth } from '../../';
 
 class CitizenUserAuthApiStub {
   private static _instance: CitizenUserAuthApiStub;
@@ -36,7 +37,7 @@ class CitizenUserAuthApiStub {
     const config = {
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
-        Authorization: 'Basic ' + btoa('nara:narasecret'),
+        Authorization: 'Basic ' + btoa(auth),
       },
       noAuth: true,
       noCatch: true,
@@ -57,7 +58,7 @@ class CitizenUserAuthApiStub {
     const config = {
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
-        Authorization: 'Basic ' + btoa('nara:narasecret'),
+        Authorization: 'Basic ' + btoa(auth),
       },
       noAuth: true,
       noCatch: true,

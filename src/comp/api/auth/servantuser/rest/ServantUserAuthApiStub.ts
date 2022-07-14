@@ -1,6 +1,7 @@
 import { ApiClient, autobind } from '@nara-way/prologue';
 import { getGeolocationData } from '../../../feature/shared/util/GeolocationUtil';
 import { ServantLoginResponse } from '../api-model';
+import { auth } from '../../';
 
 class ServantUserAuthApiStub {
   private static _instance: ServantUserAuthApiStub;
@@ -35,7 +36,7 @@ class ServantUserAuthApiStub {
     const config = {
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
-        Authorization: 'Basic ' + btoa('nara:narasecret'),
+        Authorization: 'Basic ' + btoa(auth),
       },
       noAuth: true,
       noCatch: true,
@@ -56,7 +57,7 @@ class ServantUserAuthApiStub {
     const config = {
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
-        Authorization: 'Basic ' + btoa('nara:narasecret'),
+        Authorization: 'Basic ' + btoa(auth),
       },
       noAuth: true,
       noCatch: true,
