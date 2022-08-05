@@ -1,10 +1,9 @@
 import * as React from "react";
 import {configure, isObservableArray} from 'mobx';
 import {AppContext, dialogUtil} from "@nara-way/prologue";
-import {ThemeProvider} from "@mui/material";
-import {default as theme} from './config/theme';
+import {darkTheme, lightTheme} from './config/theme';
 import {default as DialogView} from './config/dialog';
-
+import {ThemeProvider} from "@mui/material";
 
 configure({
   useProxies: 'ifavailable',
@@ -30,11 +29,14 @@ export const parameters = {
   },
 };
 
+export const darkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+const theme = darkMode ? darkTheme : lightTheme;
+
 export const decorators = [
   Story => {
-    //
+    window.document.body.style.backgroundColor = theme.palette.background.default;
     return (
-      <div>
+      <div style={{color: theme.palette.text.primary}}>
         <AppContext.Provider>
           <ThemeProvider theme={theme}>
             <dialogUtil.Viewer renderDialog={(params) => (<DialogView {...params} />)}/>
