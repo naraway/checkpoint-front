@@ -1,9 +1,0 @@
-export { default as ServantLoginLogsDynamicQuery } from './ServantLoginLogsDynamicQuery';
-export { default as ServantLoginLogDynamicQuery } from './ServantLoginLogDynamicQuery';
-export { default as ServantUsersDynamicQuery } from './ServantUsersDynamicQuery';
-export { default as ServantUserDynamicQuery } from './ServantUserDynamicQuery';
-export { default as ServantLoginLogQuery } from './ServantLoginLogQuery';
-export { default as ServantStateLogsDynamicQuery } from './ServantStateLogsDynamicQuery';
-export { default as ServantUserQuery } from './ServantUserQuery';
-export { default as ServantStateLogDynamicQuery } from './ServantStateLogDynamicQuery';
-export { default as ServantStateLogQuery } from './ServantStateLogQuery';
