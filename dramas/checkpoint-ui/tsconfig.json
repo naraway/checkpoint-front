@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "src",
+    "composite": true,
+    "paths": { "~/*": ["*"], "@nara-way/checkpoint-core": ["../checkpoint-core/src/*"] }
+  },
+  "references": [{ "path":  "../checkpoint-core", "prepend": true }],
+  "include": ["src"],
+  "exclude": ["storybook", "node_modules"]
+}
