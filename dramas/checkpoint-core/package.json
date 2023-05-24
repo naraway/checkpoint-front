@@ -1,6 +1,6 @@
 {
   "name": "@nara-way/checkpoint-core",
-  "version": "4.1.0-0",
+  "version": "4.1.0",
   "description": "NARA Way Checkpoint",
   "author": "NARA Way <naraway@nextree.io> (http://naraway.io)",
   "license": "UNLICENSED",
@@ -23,7 +23,7 @@
     "nara-update": "ncu -u -x *checkpoint* /@nara/"
   },
   "dependencies": {
-    "@nara-way/accent": "^4.1.0-14",
+    "@nara-way/accent": "^4.1.0",
     "axios": "^1"
   },
   "browserslist": {
