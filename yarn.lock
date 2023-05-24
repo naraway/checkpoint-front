@@ -1567,23 +1567,10 @@
     prop-types "^15.8.1"
     react-is "^18.2.0"
 
-"@nara-way/accent@^4.0.1-24":
-  version "4.0.1"
-  resolved "http://registry.naraway.io/repository/npm-naraway-releases/@nara-way/accent/-/accent-4.0.1.tgz#680fea99953a6aab77152a91157b026ee356db1e"
-  integrity sha512-uuh98NzKdQsh/ilcKeW+QxezCH/LARIuQEDQg5lhj54IogUwkCrILQ1NtoF6Do5svHE4W+0fGfmSvZtJFw78hA==
-
-"@nara-way/accent@^4.1.0-14":
-  version "4.1.0-14"
-  resolved "http://registry.naraway.io/repository/npm-naraway-releases/@nara-way/accent/-/accent-4.1.0-14.tgz#fa01bd12d7e8184ef223d3688672647ead734246"
-  integrity sha512-AyJgHnjmp2MbB6lAY5YAiy9rhym5MiORquQQXPzV3OvdXZpVGNLI/oj/uwIqCwf+cwSjZ46LA4WzXlVwIm3Wgg==
-
-"@nara-way/checkpoint-core@4.0.1-0":
-  version "4.0.1-0"
-  resolved "http://registry.naraway.io/repository/npm-naraway-releases/@nara-way/checkpoint-core/-/checkpoint-core-4.0.1-0.tgz#aa7a41979b4ac9970b2129a5fac841905f3f3f55"
-  integrity sha512-Pzmx/2Lp1fL2QlIpv9g7pUkZtuYnvBo++laycTI1vK+NjampuP6fqfz1Hf1RTOIgDXoJNAs7IuIEyCj9SzdS2g==
-  dependencies:
-    "@nara-way/accent" "^4.0.1-24"
-    axios "^1"
+"@nara-way/accent@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@nara-way/accent/-/accent-4.1.0.tgz#6160dbe4d44a37f35bb18abc3e195b6506aa56e5"
+  integrity sha512-XsZUE1QANTR2ovJ8raNHICZqMqOJIHFbt3nIXa82Z24nY/Tsl4f0xTkZmdksg0qDafCBntSu5FrYTO9o2ldCCA==
 
 "@ndelangen/get-tarball@^3.0.7":
   version "3.0.7"
